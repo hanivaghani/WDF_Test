@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+h1 {
+    color: #333; /* Dark heading */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger font size for heading */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    margin: 15px 0; /* Spacing between links */
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: #007BFF; /* Default link color */
+    font-size: 20px;
+    position: relative;
+    padding: 8px 0; /* Padding for clickable area */
+    display: inline-block; /* Display block to apply padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+a:hover {
+    color: #ffffff; 
+    background-color: #007BFF;
+    padding-left: 12px;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    background: #007BFF; 
+    left: 0;
+    bottom: -5px; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+a:hover::after {
+    transform: scaleX(1); 
+}

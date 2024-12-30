@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos Collection</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photos Collection</h1>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="beach">Beach</button>
+        </div>
+        <div class="gallery" id="gallery">
+            <div class="photo" data-category="beach">
+                <img src="images\beachview.jpeg" alt="Beach View">
+                <p>Beach View</p>
+            </div>
+            <div class="photo" data-category="beach">
+                <img src="images\scubadiving.jpeg" alt="Scuba Diving">
+                <p>Scuba Diving</p>
+            </div>
+            <div class="photo" data-category="nature">
+                <img src="images\forest.jpeg" alt="Forest">
+                <p>Forest</p>
+            </div>
+            <div class="photo" data-category="city">
+                <img src="images\cityview.jpeg" alt="City View">
+                <p>City View</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
